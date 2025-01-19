@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import ActivityItem from './ActivityItem';
 
 const ActivityList = ({ activities }) => {
@@ -9,6 +9,16 @@ const ActivityList = ({ activities }) => {
       ))}
     </ul>
   );
+};
+
+ActivityList.propTypes = {
+  activities: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      location: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default ActivityList;

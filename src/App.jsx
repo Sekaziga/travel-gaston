@@ -1,13 +1,12 @@
-import React from 'react';
+
 import Header from './components/Header';
 import ActivityForm from './components/ActivityForm';
-import ActivityList from './components/ActivityList';
+
 
 const App = () => {
   
   const activities = [
-    { name: 'Museum Visit', date: '2025-01-25', location: 'London' },
-    { name: 'Beach Day', date: '2025-01-26', location: 'Brighton' },
+    
   ];
 
   const handleAddActivity = (newActivity) => {

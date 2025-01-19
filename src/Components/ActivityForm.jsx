@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const ActivityForm = ({ onAddActivity }) => {
   const handleSubmit = (event) => {
@@ -9,11 +9,10 @@ const ActivityForm = ({ onAddActivity }) => {
       date: form.date.value,
       location: form.location.value,
     };
-    // Make sure onAddActivity is being called correctly
     if (onAddActivity) {
-      onAddActivity(newActivity); // Call the parent function passed as prop
+      onAddActivity(newActivity);
     } else {
-      console.error("onAddActivity is not a function");
+      console.error('onAddActivity is not a function');
     }
     form.reset();
   };
@@ -26,6 +25,10 @@ const ActivityForm = ({ onAddActivity }) => {
       <button type="submit">Add Activity</button>
     </form>
   );
+};
+
+ActivityForm.propTypes = {
+  onAddActivity: PropTypes.func.isRequired,
 };
 
 export default ActivityForm;
