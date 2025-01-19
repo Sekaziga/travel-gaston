@@ -1,11 +1,7 @@
-
+import React from 'react';
 
 const Header = () => {
-  return (
-    <header>
-      <h1>Travel Planner</h1>
-    </header>
-  );
+  return <h1>Planner</h1>;
 };
 
 export default Header;
