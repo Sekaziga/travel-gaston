@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-# Travel Planner
+# travel-gaston
 
 ## Description
 Travel Planner is a simple React application that allows users to plan their trips by adding activities. Users can specify the name, date, and location of an activity, and view them in an organized list.
@@ -19,7 +19,7 @@ Travel Planner is a simple React application that allows users to plan their tri
 
 ## Installation
 1. Clone this repository: `git clone <repository-url>`
-2. Navigate to the project directory: `cd travel-planner`
+2. Navigate to the project directory: `cd travel-gaston`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 
