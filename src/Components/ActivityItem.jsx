@@ -1,4 +1,5 @@
-import React from 'react';
+
+import PropTypes from 'prop-types';
 
 const ActivityItem = ({ activity }) => {
   const { name, date, location } = activity;
@@ -16,6 +17,15 @@ const ActivityItem = ({ activity }) => {
       </p>
     </li>
   );
+};
+
+// Add PropTypes validation
+ActivityItem.propTypes = {
+  activity: PropTypes.shape({
+    name: PropTypes.string.isRequired, // Name must be a string and is required
+    date: PropTypes.string.isRequired, // Date must be a string and is required
+    location: PropTypes.string.isRequired, // Location must be a string and is required
+  }).isRequired,
 };
 
 export default ActivityItem;
